@@ -1,0 +1,68 @@
+$ echo hello world
+hello world
+
+$ passwd
+Changing password for phuongminh.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+$ date
+Thứ tư, 03 Tháng tư năm 2019 09:41:58 +07
+
+$ hostname
+phuongminh-S300CA
+
+$ arch 
+x86_64
+
+$ uname -a
+Linux phuongminh-S300CA 4.15.0-47-generic #50~16.04.1-Ubuntu SMP Fri Mar 15 16:06:21 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+$ dmesg
+[ 2265.443940] wlp2s0: send auth to 90:b6:86:2b:d7:e0 (try 3/3)
+[ 2265.721724] wlp2s0: authentication with 90:b6:86:2b:d7:e0 timed out
+[ 2279.272349] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+[ 2380.096640] wlp2s0: authenticate with 90:b6:86:2b:d7:e0
+[ 2380.111590] wlp2s0: send auth to 90:b6:86:2b:d7:e0 (try 1/3)
+[ 2380.113608] wlp2s0: authenticated
+[ 2380.116129] wlp2s0: associate with 90:b6:86:2b:d7:e0 (try 1/3)
+[ 2380.129742] wlp2s0: RX AssocResp from 90:b6:86:2b:d7:e0 (capab=0x411 status=0 aid=1)
+[ 2380.129884] wlp2s0: associated
+[ 2380.153898] IPv6: ADDRCONF(NETDEV_CHANGE): wlp2s0: link becomes ready
+
+$ uptime
+ 09:46:17 up  1:01,  1 user,  load average: 0,29, 0,30, 0,23
+
+$ who am i
+
+$ whoami
+phuongminh
+
+$ who
+phuongminh tty7         2019-04-03 15:44 (:0)
+
+$ id
+uid=1000(phuongminh) gid=1000(phuongminh) groups=1000(phuongminh),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+
+$ last
+phuongmi tty7         :0               Wed Apr  3 15:44    gone - no logout
+reboot   system boot  4.15.0-47-generi Wed Apr  3 15:44   still running
+phuongmi tty7         :0               Tue Apr  2 22:55 - down   (00:17)
+reboot   system boot  4.15.0-47-generi Tue Apr  2 22:54 - 23:13  (00:18)
+
+wtmp begins Tue Apr  2 22:54:44 2019
+
+$ finger
+The program 'finger' is currently not installed. You can install it by typing:
+sudo apt install finger
+
+$ w
+ 09:52:38 up  1:08,  1 user,  load average: 0,14, 0,23, 0,23
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+phuongmi tty7     :0               15:44     ?     1:31   0.16s /sbin/upstart -
+
+
+
+
