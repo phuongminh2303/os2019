@@ -1,0 +1,18 @@
+$ ls | grep link
+1234link.txt
+linkasdfasdlf.txt
+
+$ wc -l /etc/passwd
+41 /etc/passwd
+
+$ free -m | awk '{print($1 $2)}'
+totalused
+Mem:3831
+Swap:7812
+
+$ cat /proc/cpuinfo | grep processor | wc -l
+4
+
+$ ls -lR photo/ | grep ".jpg" | wc -l
+1
+
