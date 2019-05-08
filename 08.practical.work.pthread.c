@@ -72,10 +72,10 @@ void *consumerThread(void *param){
 int main()
 {
 	printf("Item: type, amount, unit");
-	pthread_t tid;
-	pthread_create(&tid, NULL, produceThread, NULL );
-	pthread_join(tid, NULL);
-	pthread_create(&tid, NULL, consumerThread,NULL);
-	pthread_join(tid, NULL);
+	pthread_t tid1, tid2;
+	pthread_create(&tid1, NULL, produceThread, NULL );
+	pthread_create(&tid2, NULL, consumerThread,NULL);
+	pthread_join(tid1, NULL);
+	pthread_join(tid2, NULL);
 	return 0;
 }
