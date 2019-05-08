@@ -1,0 +1,9 @@
+$ ps aux | grep firefox
+phuong    3288 11.0  7.0 2124388 274692 ?      Sl   08:51   0:14 /usr/lib/firefox/firefox
+
+$ ps -o nlwp 3288
+NLWP
+  61
+
+$ ls /proc/3288/task | wc -l
+62
